@@ -21,7 +21,6 @@
 - npm install lucide-react 
 - npm install axios
 
-### backend
 #### frontend
 - npm install react-router-dom
 - npm install react-helmet
