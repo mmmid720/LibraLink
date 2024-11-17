@@ -1,4 +1,9 @@
-# LibraLink
+# 프로젝트 명: LibraLink
+
+## 소개
+도서관 웹페이지
+Github 시작일: 2024.11.08
+Github 마지막 수정일: 2024.11.08
 
 ## react 명령어
 - npm start
