@@ -14,6 +14,13 @@
 
 ## 필수 설치 요소
 
+### frontend
+- npm install react-router-dom
+- npm install react-helmet
+# UI / 아이콘
+- npm install lucide-react 
+- npm install axios
+
 #### frontend
 - npm install react-router-dom
 - npm install react-helmet
