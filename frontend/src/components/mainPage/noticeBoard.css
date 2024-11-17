@@ -1,0 +1,96 @@
+.notice-board {
+  background: white;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  height: 300px; /* 고정 높이 설정 */
+  display: flex;
+  flex-direction: column;
+}
+
+.notice-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #e5e5e5;
+  cursor: pointer;
+}
+
+.more-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* SVG 색상 전환을 위한 스타일 */
+.more-btn svg path {
+  transition: stroke 0.4s ease; /* 색상 전환 효과 */
+}
+
+.more-btn:hover svg path {
+  stroke: #7402EE; /* notice-list와 동일한 hover 색상 */
+}
+
+.notice-list {
+  list-style: none;
+  padding: 0;
+  flex: 1; /* 남은 공간 채우기 */
+  overflow-y: auto; /* 내용이 넘칠 경우 스크롤 */
+  transition: stroke 0.4s ease;
+}
+
+/* 스크롤바 스타일링 */
+.notice-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.notice-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.notice-list::-webkit-scrollbar-thumb {
+  background: #7402EE;
+  border-radius: 2px;
+}
+
+.notice-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 0;
+  gap: 2rem; /* 텍스트와 날짜 사이 간격 */
+}
+
+.notice-date {
+  color: #999; /* 날짜는 좀 더 연한 색상 */
+  font-size: 0.85rem;
+  min-width: 80px; /* 날짜의 최소 너비 설정 */
+  cursor: pointer;
+}
+
+.notice-text {
+  flex: 1; /* 공지사항 텍스트가 최대한의 공간 차지 */
+  color: #333;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; /* 긴 텍스트는 ... 으로 처리 */
+  cursor: pointer;
+}
+
+/* hover 효과 */
+.notice-item:hover .notice-text {
+  color: #7402EE;
+}
+/* hover 효과 */
+.notice-item:hover .notice-date {
+  color: #7402EE;
+}

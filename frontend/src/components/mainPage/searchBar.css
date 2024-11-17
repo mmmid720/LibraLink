@@ -1,0 +1,56 @@
+.search-container {
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+  margin: 2rem auto;
+  display: flex; /* Flexbox 추가 */
+  align-items: center; /* 수직 중앙 정렬 */
+}
+
+.search-input {
+  width: 100%;
+  padding: 1rem;
+  padding-right: 60px;
+  border: 1px solid #7402EE;
+  border-radius: 4px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.search-button {
+  position: absolute;
+  right: 0; /* 오른쪽 끝으로 이동 */
+  height: 100%; /* 높이를 입력창과 동일하게 */
+  width: 56px;
+  background-color: #7402EE;
+  border: none;
+  border-radius: 0 4px 4px 0; /* 왼쪽 모서리는 직각, 오른쪽만 둥글게 */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+  margin: 0; /* 마진 제거 */
+  padding: 0; /* 패딩 제거 */
+}
+
+.search-button:hover {
+  background-color: #5c02bb;
+}
+
+/* SVG 아이콘 크기 조정 */
+.search-button svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .search-container {
+    width: 90%;
+  }
+  
+  .search-input {
+    font-size: 0.9rem;
+  }
+}
