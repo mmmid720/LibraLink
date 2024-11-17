@@ -1,7 +1,20 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
 .main {
-    min-height: 100vh;
-    background-color: #ffffff;
-  }
+  width: 100%;  /* 추가 */
+  min-height: 100vh;
+  background-color: #ffffff;
+  overflow-x: hidden;  /* 추가 */
+}
   
   /* 새로 추가된 search-section */
   .search-section {
@@ -39,8 +52,8 @@
     position: relative;
     z-index: 2;
   }
-  
-  .content-container {
+ 
+.content-container {
     max-width: 1200px;
     max-height: 380px;
     margin: 2rem auto;
@@ -48,5 +61,5 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 1rem;
-    align-items: stretch; /* grid 아이템들의 높이를 동일하게 맞춤 */
-  }
+    align-items: stretch;
+}

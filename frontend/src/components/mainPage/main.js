@@ -14,22 +14,22 @@ function Main() {
   return (
     <>
       <Helmet>
-            <title>LibraLink - 홈</title>
+        <title>LibraLink - 홈</title>
       </Helmet>
-            <div className="main">
-              <Navbar />
-              <div className="search-section">
-                <div className="overlay"></div>
-                <div className="main-search-container">
-                  <SearchBar />
-                </div>
-              </div>
-              <div className="content-container">
-                <NoticeBoard />
-                <OpeningHours />
-              </div>
-              <Footer />
+        <div className="main">
+          <Navbar />
+          <div className="search-section">
+            <div className="overlay"></div>
+            <div className="main-search-container">
+              <SearchBar />
             </div>
+          </div>
+          <div className="content-container">
+            <NoticeBoard />
+            <OpeningHours />
+          </div>
+          <Footer />
+        </div>
     </>
   );
 }

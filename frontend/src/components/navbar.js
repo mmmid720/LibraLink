@@ -168,7 +168,7 @@ function Navbar() {
               </svg>
               <span>로그인</span>
             </button>
-            <button className="signup-btn">회원가입</button>
+            <Link to="/signup" className="signup-btn">회원가입</Link>
           </>
         ) : (
           <div className="profile-menu-container">
