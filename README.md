@@ -17,18 +17,11 @@
 ### frontend
 - npm install react-router-dom
 - npm install react-helmet
-# UI / 아이콘
+### UI / 아이콘
 - npm install lucide-react 
 - npm install axios
 
-#### frontend
-- npm install react-router-dom
-- npm install react-helmet
-##### UI / 아이콘
-- npm install lucide-react 
-- npm install axios
-
-#### backend
+### backend
 - npm install express nodemon
 - npm install cors
 
