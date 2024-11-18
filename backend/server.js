@@ -18,6 +18,6 @@ app.get('*', (req, res) => {
 app.use(express.json());
 
 
-app.listen(5000, () => {
-    console.log('Server running on port 5000');
+app.listen(8080, () => {
+    console.log('서버 시작중... 포트번호: 8080');
 });

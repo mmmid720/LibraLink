@@ -14,20 +14,20 @@ function Navbar() {
   ];
   const menuItems = [
     {
-      id: 'discover',
+      id: 'best',
       title: '인기 도서',
       items: [
         {
           title: '월간 인기도서',
           description: '이번 달 가장 인기있는 도서!',
           icon: '⭐',
-          path: '/popularbook'
+          path: '/monthlybestbook'
         },
         {
           title: '주간 인기도서',
-          description: '이번 주 가장 인기있는 도서들을 확인해보세요.',
+          description: '이번 주 가장 인기있는 도서!.',
           icon: '🔥',
-          path: '/weekendbook'
+          path: '/weeklybestbook'
         },
       ]
     },
@@ -39,11 +39,11 @@ function Navbar() {
           title: '공지사항',
           description: '도서관 공지 안내',
           icon: '📢',
-          path: '/notice'
+          path: '/noticeboard'
         },
         {
           title: '자유 게시판',
-          description: '다른 독자들의 생생한 리뷰',
+          description: '자유롭게 작성하는 게시판',
           icon: '🌍',
           path: '/freeboard'
         },
@@ -57,19 +57,19 @@ function Navbar() {
           title: '이용 안내',
           description: '도서관 이용 안내와 제제 규칙',
           icon: '❗',
-          path: '/infomation'
+          path: '/libraryinfo'
         },
       ]
     },
     {
-      id: 'borrow',
+      id: 'suggestion',
       title: '건의사항',
       items: [
         {
           title: '건의사항 게시판',
-          description: '건의하고 싶은 내용을 올려주세요!',
+          description: '건의사항 작성 및 확인',
           icon: '🙋',
-          path: '/borrowboard'
+          path: '/suggestionboard'
         },
         {
           title: '희망도서 게시판',
@@ -80,7 +80,7 @@ function Navbar() {
       ]
     },
     {
-      id: 'mylibrary',
+      id: 'mypage',
       title: '마이페이지',
       items: [
         {
@@ -93,7 +93,7 @@ function Navbar() {
           title: '관심 도서',
           description: '관심도서로 추가한 도서 목록을 확인',
           icon: '🔖',
-          path: '/bookmark'
+          path: '/mybookmark'
         },
       ]
     }

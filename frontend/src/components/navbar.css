@@ -116,7 +116,7 @@
   
   .dropdown-item:hover {
     background: #f8f9fa;
-    transform: translateX(8px);
+    transform: translateX(1px);
   }
   
   .item-icon {

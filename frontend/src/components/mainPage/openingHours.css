@@ -1,49 +1,193 @@
 .opening-hours {
-  background: white;
-  padding-left: 0.8rem;
-  padding-right: 0.8rem;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  height: 300px; /* NoticeBoard와 동일한 높이 */
+  background: linear-gradient(145deg, #ffffff, #f5f5f5);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 
+    0 10px 20px rgba(0,0,0,0.05),
+    0 6px 6px rgba(0,0,0,0.03);
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.opening-hours:hover {
+  box-shadow: 
+    0 12px 24px rgba(0,0,0,0.07),
+    0 8px 8px rgba(0,0,0,0.05);
+}
+
+.content-wrapper {
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.time-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  gap: 1.5rem;
 }
 
-.opening-hours h2 {
-  margin: 0;
-  font-size: 2rem;
-  margin-bottom: 1.5rem; /* 제목과 시간 정보 사이 간격 */
-  text-align: center;
-  cursor: pointer;
-}
-
-.hours {
-  display: flex;
-  flex-direction: column; /* 세로 방향으로 정렬 */
-  align-items: center;
-  gap: 0.5rem; /* 시간과 상태 사이 간격 */
-  cursor: pointer;
+.time-badge {
+  background: #f8f9fa;
+  padding: 0.8rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px rgba(0,0,0,0.05);
 }
 
 .time {
-  font-size: 1.5rem; /* 시간 텍스트 크기 증가 */
-  font-weight: bold;
-  text-align: center;
-  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #2b9b9b;
+  letter-spacing: -0.5px;
+}
+
+.status-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(43, 155, 155, 0.1);
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+}
+
+.status-badge:hover {
+  background: rgba(43, 155, 155, 0.15);
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #2b9b9b;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
 }
 
 .status {
   color: #2b9b9b;
-  padding-top: 30px;
-  font-size: 1.5rem; /* 상태 텍스트 크기 증가 */
-  font-weight: bold;
-  text-align: center;
-  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
-.status:hover {
-  transition: all 0.2s ease-in-out;
-  color: #1c6565; /* 선택적: hover 효과 추가 */
+.status-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+}
+
+.status-badge.open {
+  background: rgba(43, 155, 155, 0.1);
+}
+
+.status-badge.closed {
+  background: rgba(255, 69, 58, 0.1);
+}
+
+.status-badge.open .dot {
+  width: 8px;
+  height: 8px;
+  background-color: #2b9b9b;
+  border-radius: 50%;
+  animation: pulseOpen 2s infinite;
+}
+
+.status-badge.closed .dot {
+  width: 8px;
+  height: 8px;
+  background-color: #ff453a;
+  border-radius: 50%;
+  animation: pulseClosed 2s infinite;
+}
+
+.status-badge.open .status {
+  color: #2b9b9b;
+}
+
+.status-badge.closed .status {
+  color: #ff453a;
+}
+
+.current-time {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #666;
+}
+
+@keyframes pulseOpen {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(43, 155, 155, 0.7);
+  }
+  
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 6px rgba(43, 155, 155, 0);
+  }
+  
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(43, 155, 155, 0);
+  }
+}
+
+@keyframes pulseClosed {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 69, 58, 0.7);
+  }
+  
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 6px rgba(255, 69, 58, 0);
+  }
+  
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 69, 58, 0);
+  }
+}
+
+/* 테스트 css */ 
+.test-mode-container {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+.test-controls {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 8px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  font-size: 0.8rem;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.test-controls input[type="number"] {
+  width: 50px;
+  padding: 2px 4px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.test-controls label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }

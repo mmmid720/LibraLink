@@ -64,6 +64,10 @@
     display: flex;
     align-items: center;
     gap: 5px;
+    font-size: 14px;
+  }
+  .remember-me input[type="checkbox"] {
+    accent-color: #7402EE;
   }
   
   .links {
@@ -104,4 +108,17 @@
   .login-button:hover,
   .register-button:hover {
     opacity: 0.9;
+  }
+
+
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.eye-icon img {
+    position: relative;
+    top: 2.5px; 
   }

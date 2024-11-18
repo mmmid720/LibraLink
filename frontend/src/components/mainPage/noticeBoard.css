@@ -2,9 +2,11 @@
   background: white;
   padding-left: 0.8rem;
   padding-right: 0.8rem;
+  padding-top: 0.3rem;
+  padding-bottom: 1rem;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  height: 300px; /* 고정 높이 설정 */
+  height: 300px;
   display: flex;
   flex-direction: column;
 }
@@ -14,7 +16,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
-  padding-bottom: 1px;
+  margin-top: 1rem;
   border-bottom: 1px solid #e5e5e5;
   cursor: pointer;
 }
