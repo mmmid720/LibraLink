@@ -1,14 +1,11 @@
-body {
+.signup-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
     background-color: #ffffff;
-    padding-top: 10rem;
 }
-
-.signup-container {
+.signup-box {
     background: white;
     padding: 40px;
     border-radius: 10px;
@@ -18,12 +15,10 @@ body {
 }
 
 .logo {
-    text-align: center;
     margin-bottom: 25px;
     color: #7402EE;
     font-size: 26px;
     font-weight: bold;
-    cursor: pointer;
 }
 
 .logo:hover {
@@ -91,10 +86,4 @@ body {
 
 .submit-button:hover {
     background-color: #5c02bb;
-}
-
-.footer-signup-box {
-    padding: 2rem 0;
-    margin-top: auto;    
-    width: 100%; /* 추가 */
 }

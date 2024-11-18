@@ -1,0 +1,107 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+  }
+  
+  .login-box {
+    width: 400px;
+    padding: 40px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #7402EE;
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-decoration: none;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .password-input {
+    position: relative;
+  }
+  
+  .eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+  }
+  
+  .remember-me {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .links {
+    font-size: 14px;
+  }
+  
+  .links a {
+    color: #666;
+    text-decoration: none;
+  }
+  
+  .divider {
+    margin: 0 8px;
+    color: #ddd;
+  }
+  
+  .login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #7402EE;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  
+  .register-button {
+    width: 100%;
+    padding: 12px;
+    background-color: white;
+    color: #7402EE;
+    border: 1px solid #7402EE;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .login-button:hover,
+  .register-button:hover {
+    opacity: 0.9;
+  }

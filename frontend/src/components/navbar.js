@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './navbar.css';
 
 function Navbar() {
+  const navigate = useNavigate();
   const [activeMenu, setActiveMenu] = useState(null);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const userName = "황중혁";
+  const userName = "홍길동";
   
   const profileMenu = [
     { title: '프로필 설정', path: '/profile/settings' },
     { title: '알림', path: '/profile/notifications' },
   ];
-
   const menuItems = [
     {
       id: 'discover',
@@ -152,22 +152,22 @@ function Navbar() {
       <div className="navbar-auth">
         {!isLoggedIn ? (
           <>
-            <button className="login-btn" onClick={() => setIsLoggedIn(true)}>
-              <svg 
-                className="login-icon" 
-                viewBox="0 0 24 24" 
-                fill="none" 
-                stroke="currentColor" 
-                strokeWidth="2" 
-                strokeLinecap="round" 
-                strokeLinejoin="round"
-              >
-                <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" />
-                <polyline points="10 17 15 12 10 7" />
-                <line x1="15" y1="12" x2="3" y2="12" />
-              </svg>
-              <span>로그인</span>
-            </button>
+          <button className="login-btn" onClick={() => navigate('/login')}>
+            <svg 
+              className="login-icon" 
+              viewBox="0 0 24 24" 
+              fill="none" 
+              stroke="currentColor" 
+              strokeWidth="2" 
+              strokeLinecap="round" 
+              strokeLinejoin="round"
+            >
+              <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" />
+              <polyline points="10 17 15 12 10 7" />
+              <line x1="15" y1="12" x2="3" y2="12" />
+            </svg>
+            로그인
+          </button>
             <Link to="/signup" className="signup-btn">회원가입</Link>
           </>
         ) : (
