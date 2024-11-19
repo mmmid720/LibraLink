@@ -17,8 +17,8 @@
 ### frontend
 - npm install react-router-dom
 - npm install react-helmet
-### UI / 아이콘
-- npm install lucide-react 
+- npm install lucide-react
+### api (frontend)
 - npm install axios
 
 ### backend
