@@ -8,12 +8,21 @@
   }
   
   .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-size: 1.5rem;
     font-weight: 700;
     color: #7402EE;
     text-decoration: none;
     letter-spacing: -0.5px;
-  }
+}
+
+.brand-logo {
+    height: 1.5em;
+    width: auto;
+    object-fit: contain;
+}
   
   .navbar-menu {
     display: flex;

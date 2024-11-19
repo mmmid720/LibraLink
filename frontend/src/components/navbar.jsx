@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+
+import logo from '../assets/logo/libralink_logo_192.png';
+
 import './navbar.css';
 
 const Navbar = () => {
@@ -171,7 +174,8 @@ const Navbar = () => {
    <React.Fragment>
      <nav className="navbar">
        <Link to="/" className="navbar-brand">
-         <span className="brand-text">LibraLink</span>
+          <img src={logo} alt="LibraLink Logo" className="brand-logo" />
+          <span className="brand-text">LibraLink</span>
        </Link>
 
        <div className="navbar-menu">
