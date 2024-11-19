@@ -25,6 +25,17 @@
 - npm install express nodemon
 - npm install cors
 
-## 사용 기술
+# 🛠 사용 기술
+## frontend
 - JavaScript
-- CSS
+- CSS3
+- React
+## backend
+- NodeJS
+- Express
+## Database
+- MongoDB
+## Tools
+- git
+- github
+- VSCode
