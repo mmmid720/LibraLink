@@ -1,5 +1,5 @@
 # 🏫 프로젝트 명: LibraLink
-
+![libralink_logo_192](https://github.com/user-attachments/assets/bb06b1d8-5459-409e-8dff-907be51c717b)
 ## 🙌 소개
 - 도서관 웹페이지
 - Github 시작일: 2024.11.18
