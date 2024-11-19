@@ -1,7 +1,7 @@
 import React from 'react';
 import './noticeBoard.css';
 
-function NoticeBoard() {
+const NoticeBoard = () => {
   const notices = [
     {
       text: "11월 강릉문화의 집 어린이주말문화체험 <역사야 함께 놀자!>",
@@ -47,43 +47,46 @@ function NoticeBoard() {
       text: "[강릉문화의집 특별프로그램] 내 손으로 만드는, 행복의 나날 캘린더",
       date: "2024.09.27"
     },
-    // ... 더 많은 공지사항
   ];
 
-  return (
-    <div className="notice-board">
-      <div className="notice-header">
-        <h2>공지사항</h2>
-        <button className="more-btn">
-          <svg 
-            width="30" 
-            height="30" 
-            viewBox="0 0 40 40" 
-            fill="none" 
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M20 8V32M8 20H32"
-              stroke="#333"
-              strokeWidth="3"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </button>
+  const renderNoticeItem = (notice, index) => (
+    <li key={index}>
+      <div className="notice-item">
+        <span className="notice-text">{notice.text}</span>
+        <span className="notice-date">{notice.date}</span>
       </div>
-      <ul className="notice-list">
-        {notices.map((notice, index) => (
-          <li key={index}>
-            <div className="notice-item">
-              <span className="notice-text">{notice.text}</span>
-              <span className="notice-date">{notice.date}</span>
-            </div>
-          </li>
-        ))}
-      </ul>
-    </div>
+    </li>
   );
-}
+
+  return (
+    <React.Fragment>
+      <div className="notice-board">
+        <div className="notice-header">
+          <h2>공지사항</h2>
+          <button className="more-btn">
+            <svg 
+              width="30" 
+              height="30" 
+              viewBox="0 0 40 40" 
+              fill="none" 
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20 8V32M8 20H32"
+                stroke="#333"
+                strokeWidth="3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <ul className="notice-list">
+          {notices.map(renderNoticeItem)}
+        </ul>
+      </div>
+    </React.Fragment>
+  );
+};
 
 export default NoticeBoard;

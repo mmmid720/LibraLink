@@ -1,5 +1,5 @@
 .opening-hours {
-  background: linear-gradient(145deg, #ffffff, #f5f5f5);
+  background: linear-gradient(145deg, #ffffff, #ffffff);
   padding: 2rem;
   border-radius: 16px;
   box-shadow: 
@@ -10,13 +10,14 @@
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-.opening-hours:hover {
+/*.opening-hours:hover {
   box-shadow: 
     0 12px 24px rgba(0,0,0,0.07),
     0 8px 8px rgba(0,0,0,0.05);
-}
+}*/
 
 .content-wrapper {
   text-align: center;
@@ -38,10 +39,10 @@ h2 {
 }
 
 .time-badge {
-  background: #f8f9fa;
+  background: #ffffff;
   padding: 0.8rem 1.5rem;
   border-radius: 12px;
-  box-shadow: 0 2px rgba(0,0,0,0.05);
+  box-shadow: 3px 3px rgba(0,0,0,0.05);
 }
 
 .time {

@@ -10,9 +10,9 @@ import SearchBar from './searchBar';
 import NoticeBoard from './noticeBoard';
 import OpeningHours from './openingHours';
 
-function Main() {
+const Main = () => {
   return (
-    <>
+    <React.Fragment>
       <Helmet>
         <title>LibraLink - 홈</title>
       </Helmet>
@@ -30,8 +30,8 @@ function Main() {
           </div>
           <Footer />
         </div>
-    </>
+    </React.Fragment>
   );
-}
+};
 
 export default Main;
