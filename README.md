@@ -1,15 +1,14 @@
 # 🏫 프로젝트 명: LibraLink
-![libralink_logo_192](https://github.com/user-attachments/assets/bb06b1d8-5459-409e-8dff-907be51c717b)
-## 🙌 소개
+
+![libralink_logo_text_psd](https://github.com/user-attachments/assets/45a262fa-c0fe-4ffb-8049-2714c8823bf6)
+### 🙌 소개
 - 도서관 웹페이지
 - Github 시작일: 2024.11.18
 - Github 마지막 수정일: 2024.11.19
-
-## React 명령어
+### 🌐 React 명령어
 - npm start
-- npm test
 - npm run build
-- npm run eject
+- Ctrl+C (stop)
 
 
 # 🔥 필수 설치 요소
@@ -26,16 +25,16 @@
 
 
 # 🛠 사용 기술
-## frontend
+### frontend
 - JavaScript
 - CSS3
 - React
-## backend
-- NodeJS
+### backend
+- Node.JS
 - Express
-## Database
+### Database
 - MongoDB
-## Tools
+### Tools
 - git
 - github
 - VSCode
