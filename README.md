@@ -27,6 +27,7 @@
 # 🛠 사용 기술
 ### frontend
 - JavaScript
+- HTML
 - CSS3
 - React
 ### backend
